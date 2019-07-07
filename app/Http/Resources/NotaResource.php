@@ -14,6 +14,9 @@ class NotaResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        $nota =  parent::toArray($request);
+        //$barang = $this->penjualan->barang;
+
+        return $nota;
     }
 }

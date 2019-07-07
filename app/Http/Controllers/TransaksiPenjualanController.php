@@ -11,7 +11,13 @@ class TransaksiPenjualanController extends Controller
 {
     public function index()
     {
-     
+        //return NotaResource::collection(Nota::all());
+        $nota = Nota::find(3)->penjualan;
+        $transaksi = [];
+        foreach ($nota as $penjualan) {
+            array_push($transaksi, ['penjualan' => $penjualan, 'barang' =>$penjualan->barang]);
+        }
+        return response()->json($transaksi);
     }
 
     public function store(Request $request)

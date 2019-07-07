@@ -11,6 +11,7 @@ window.Vue = require("vue");
 import Vuetify from "vuetify";
 import VueRouter from "vue-router";
 import VeeValidate from "vee-validate";
+import Auth from "./auth";
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,6 +20,7 @@ import VeeValidate from "vee-validate";
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
+Vue.prototype.$auth = new Auth(window.access);
 
 Vue.use(Vuetify);
 Vue.use(VueRouter);

@@ -27,3 +27,15 @@
     </div>
 </body>
 </html>
+
+<script>
+    window.access = @json(
+        [
+            'user' => auth()->user(),
+            'roles' => auth()->user()->roles,
+            'permission' => auth()->user()->permissions
+        ]
+    );
+
+    console.log(window.access);
+</script>

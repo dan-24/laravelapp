@@ -61293,87 +61293,93 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c(
-                "v-list-group",
-                [
-                  _c(
-                    "v-list-tile",
-                    { attrs: { slot: "activator" }, slot: "activator" },
+              _vm.$auth.isAdmin()
+                ? _c(
+                    "v-list-group",
                     [
                       _c(
-                        "v-list-tile-action",
-                        [_c("v-icon", [_vm._v("account_circle")])],
+                        "v-list-tile",
+                        { attrs: { slot: "activator" }, slot: "activator" },
+                        [
+                          _c(
+                            "v-list-tile-action",
+                            [_c("v-icon", [_vm._v("account_circle")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [
+                                _vm._v("User Management")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
                         1
                       ),
                       _vm._v(" "),
                       _c(
-                        "v-list-tile-content",
-                        [_c("v-list-tile-title", [_vm._v("User Management")])],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-tile",
-                    { attrs: { to: "/admin/users" } },
-                    [
-                      _c(
-                        "v-list-tile-action",
-                        [_c("v-icon", [_vm._v("account_circle")])],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile-content",
-                        [_c("v-list-tile-title", [_vm._v("Users")])],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-tile",
-                    { attrs: { to: "/admin/roles" } },
-                    [
-                      _c(
-                        "v-list-tile-action",
-                        [_c("v-icon", [_vm._v("account_circle")])],
+                        "v-list-tile",
+                        { attrs: { to: "/admin/users" } },
+                        [
+                          _c(
+                            "v-list-tile-action",
+                            [_c("v-icon", [_vm._v("account_circle")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [_c("v-list-tile-title", [_vm._v("Users")])],
+                            1
+                          )
+                        ],
                         1
                       ),
                       _vm._v(" "),
                       _c(
-                        "v-list-tile-content",
-                        [_c("v-list-tile-title", [_vm._v("Roles")])],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-tile",
-                    { attrs: { to: "/admin/permission" } },
-                    [
-                      _c(
-                        "v-list-tile-action",
-                        [_c("v-icon", [_vm._v("account_circle")])],
+                        "v-list-tile",
+                        { attrs: { to: "/admin/roles" } },
+                        [
+                          _c(
+                            "v-list-tile-action",
+                            [_c("v-icon", [_vm._v("account_circle")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [_c("v-list-tile-title", [_vm._v("Roles")])],
+                            1
+                          )
+                        ],
                         1
                       ),
                       _vm._v(" "),
                       _c(
-                        "v-list-tile-content",
-                        [_c("v-list-tile-title", [_vm._v("Permissions")])],
+                        "v-list-tile",
+                        { attrs: { to: "/admin/permission" } },
+                        [
+                          _c(
+                            "v-list-tile-action",
+                            [_c("v-icon", [_vm._v("account_circle")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [_c("v-list-tile-title", [_vm._v("Permissions")])],
+                            1
+                          )
+                        ],
                         1
                       )
                     ],
                     1
                   )
-                ],
-                1
-              ),
+                : _vm._e(),
               _vm._v(" "),
               _c(
                 "v-list-tile",
@@ -105789,21 +105795,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
-/* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuetify/dist/vuetify.min.css */ "./node_modules/vuetify/dist/vuetify.min.css");
-/* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _pages_Dashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Dashboard */ "./resources/js/pages/Dashboard.vue");
-/* harmony import */ var _pages_Permission__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Permission */ "./resources/js/pages/Permission.vue");
-/* harmony import */ var _pages_User__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/User */ "./resources/js/pages/User.vue");
-/* harmony import */ var _pages_Roles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Roles */ "./resources/js/pages/Roles.vue");
-/* harmony import */ var _pages_Setting__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Setting */ "./resources/js/pages/Setting.vue");
-/* harmony import */ var _pages_Kategori__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/Kategori */ "./resources/js/pages/Kategori.vue");
-/* harmony import */ var _pages_Barang__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Barang */ "./resources/js/pages/Barang.vue");
-/* harmony import */ var _pages_Suplier__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/Suplier */ "./resources/js/pages/Suplier.vue");
-/* harmony import */ var _pages_Nota__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/Nota */ "./resources/js/pages/Nota.vue");
-/* harmony import */ var _pages_Penjualan__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/Penjualan */ "./resources/js/pages/Penjualan.vue");
-/* harmony import */ var _pages_Karyawan__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/Karyawan */ "./resources/js/pages/Karyawan.vue");
-/* harmony import */ var _pages_Jabatan__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Jabatan */ "./resources/js/pages/Jabatan.vue");
-/* harmony import */ var _pages_Piket__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/Piket */ "./resources/js/pages/Piket.vue");
+/* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth */ "./resources/js/auth.js");
+/* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/dist/vuetify.min.css */ "./node_modules/vuetify/dist/vuetify.min.css");
+/* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _pages_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Dashboard */ "./resources/js/pages/Dashboard.vue");
+/* harmony import */ var _pages_Permission__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Permission */ "./resources/js/pages/Permission.vue");
+/* harmony import */ var _pages_User__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/User */ "./resources/js/pages/User.vue");
+/* harmony import */ var _pages_Roles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Roles */ "./resources/js/pages/Roles.vue");
+/* harmony import */ var _pages_Setting__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/Setting */ "./resources/js/pages/Setting.vue");
+/* harmony import */ var _pages_Kategori__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Kategori */ "./resources/js/pages/Kategori.vue");
+/* harmony import */ var _pages_Barang__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/Barang */ "./resources/js/pages/Barang.vue");
+/* harmony import */ var _pages_Suplier__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/Suplier */ "./resources/js/pages/Suplier.vue");
+/* harmony import */ var _pages_Nota__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/Nota */ "./resources/js/pages/Nota.vue");
+/* harmony import */ var _pages_Penjualan__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/Penjualan */ "./resources/js/pages/Penjualan.vue");
+/* harmony import */ var _pages_Karyawan__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Karyawan */ "./resources/js/pages/Karyawan.vue");
+/* harmony import */ var _pages_Jabatan__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/Jabatan */ "./resources/js/pages/Jabatan.vue");
+/* harmony import */ var _pages_Piket__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/Piket */ "./resources/js/pages/Piket.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -105815,6 +105822,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -105823,6 +105831,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+Vue.prototype.$auth = new _auth__WEBPACK_IMPORTED_MODULE_3__["default"](window.access);
 Vue.use(vuetify__WEBPACK_IMPORTED_MODULE_0___default.a);
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 Vue.use(vee_validate__WEBPACK_IMPORTED_MODULE_2__["default"]);
@@ -105849,43 +105858,43 @@ Vue.component("Admin", __webpack_require__(/*! ./components/Admin.vue */ "./reso
 
 var routes = [{
   path: "/admin/",
-  component: _pages_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"]
+  component: _pages_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"]
 }, {
   path: "/admin/users/",
-  component: _pages_User__WEBPACK_IMPORTED_MODULE_6__["default"]
+  component: _pages_User__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
   path: "/admin/roles/",
-  component: _pages_Roles__WEBPACK_IMPORTED_MODULE_7__["default"]
+  component: _pages_Roles__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, {
   path: "/admin/permission/",
-  component: _pages_Permission__WEBPACK_IMPORTED_MODULE_5__["default"]
+  component: _pages_Permission__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   path: "/admin/kategori/",
-  component: _pages_Kategori__WEBPACK_IMPORTED_MODULE_9__["default"]
+  component: _pages_Kategori__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
   path: "/admin/barang/",
-  component: _pages_Barang__WEBPACK_IMPORTED_MODULE_10__["default"]
+  component: _pages_Barang__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   path: "/admin/suplier/",
-  component: _pages_Suplier__WEBPACK_IMPORTED_MODULE_11__["default"]
+  component: _pages_Suplier__WEBPACK_IMPORTED_MODULE_12__["default"]
 }, {
   path: "/admin/nota/",
-  component: _pages_Nota__WEBPACK_IMPORTED_MODULE_12__["default"]
+  component: _pages_Nota__WEBPACK_IMPORTED_MODULE_13__["default"]
 }, {
   path: "/admin/transaksi/",
-  component: _pages_Penjualan__WEBPACK_IMPORTED_MODULE_13__["default"]
+  component: _pages_Penjualan__WEBPACK_IMPORTED_MODULE_14__["default"]
 }, {
   path: "/admin/pegawai/",
-  component: _pages_Karyawan__WEBPACK_IMPORTED_MODULE_14__["default"]
+  component: _pages_Karyawan__WEBPACK_IMPORTED_MODULE_15__["default"]
 }, {
   path: "/admin/jabatan/",
-  component: _pages_Jabatan__WEBPACK_IMPORTED_MODULE_15__["default"]
+  component: _pages_Jabatan__WEBPACK_IMPORTED_MODULE_16__["default"]
 }, {
   path: "/admin/piket/",
-  component: _pages_Piket__WEBPACK_IMPORTED_MODULE_16__["default"]
+  component: _pages_Piket__WEBPACK_IMPORTED_MODULE_17__["default"]
 }, {
   path: "/admin/setting/",
-  component: _pages_Setting__WEBPACK_IMPORTED_MODULE_8__["default"]
+  component: _pages_Setting__WEBPACK_IMPORTED_MODULE_9__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: "history",
@@ -105902,6 +105911,59 @@ var app = new Vue({
   router: router,
   el: "#app"
 });
+
+/***/ }),
+
+/***/ "./resources/js/auth.js":
+/*!******************************!*\
+  !*** ./resources/js/auth.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Auth; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Auth =
+/*#__PURE__*/
+function () {
+  function Auth(access) {
+    _classCallCheck(this, Auth);
+
+    this.user = access;
+  }
+
+  _createClass(Auth, [{
+    key: "roles",
+    value: function roles() {
+      return this.user.roles.map(function (role) {
+        return role.name;
+      });
+    }
+  }, {
+    key: "permission",
+    value: function permission() {
+      return this.user.permission.map(function (permision) {
+        return permision.name;
+      });
+    }
+  }, {
+    key: "isAdmin",
+    value: function isAdmin() {
+      return this.roles().includes("Admin");
+    }
+  }]);
+
+  return Auth;
+}();
+
+
 
 /***/ }),
 

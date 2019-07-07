@@ -11,7 +11,7 @@
           </v-list-tile-content>
         </v-list-tile>
 
-        <v-list-group>
+        <v-list-group v-if="$auth.isAdmin()">
           <v-list-tile slot="activator">
             <v-list-tile-action>
               <v-icon>account_circle</v-icon>
